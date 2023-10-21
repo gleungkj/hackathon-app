@@ -40,7 +40,6 @@ const generateResponse = (req, res) => __awaiter(void 0, void 0, void 0, functio
             model: modelId,
             messages: currentMessages,
         });
-        console.log(result);
         const responseText = result.choices.shift().message.content;
         conversationContext.push([promptText, responseText]);
         res.send({ response: responseText });
