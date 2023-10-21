@@ -9,4 +9,4 @@ You will also need to install the postman desktop app (https://www.postman.com/d
 
 To run the app, use the command listed below on the CLI): <br>
 
-tsc && node app.js
+**tsc && node app.js**
