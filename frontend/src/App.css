@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 3em;
+  color: rgba(141, 47, 255, 0.762);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+  background-image: url('images/SealQuest.jpg'); /* Path is relative to the public directory */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.search-bar label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+button {
+  width: auto;     /* Adjust the button width as needed */
+  height: 30px;    /* Adjust the button height as needed */
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 32px;       /* Adjust the font size as needed */
+  font-weight: bold;    /* Make the text bold */
+  color: #333;         /* Set the text color (you can use any color) */
+  margin: 20px 0;      /* Add margin to control spacing around the heading */
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-align: center;  /* Center-align the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for emphasis */
+
+}
+
+
