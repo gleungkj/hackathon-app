@@ -1,10 +1,7 @@
 import React from 'react';
-import SearchBar from './components/SearchBar';
-import GenAI from './components/GenAI';
 import './App.css';
-import './images/SealQuest.jpg'
-
-
+import { SearchBar } from './components/SearchBar';
+import { GenAI } from './components/GenAI';
 
 function App() {
   return (
