@@ -1,49 +1,32 @@
 import React from 'react';
+import './SearchBar.css'
 
-function SearchBar() {
-  const inputStyle = {
-    width: '100%',
-    height: '40px',
-    borderRadius: '10px', 
-    border: '1px solid #ccc', 
-    paddingLeft: '1px',
-  };
-
-  const buttonStyle = {
-    width: '5%',
-    height: '50px',
-    background: '#7752FE',
-    color: 'white',
-    borderRadius: '20px',
-    marginTop: '15px',
-    fontWeight: 'bold',
-   
-  };
+export const SearchBar: React.FC = () => {
   return (
     <div className="search-bar">
       <div className="search-field">
         <label htmlFor="from">From</label>
-        <input type="text" id="from" style={inputStyle} placeholder="city or airport" />
+        <input type="text" id="from" className='inputStyle' placeholder="city or airport" />
       </div>
 
       <div className="search-field">
         <label htmlFor="to">To</label>
-        <input type="text" id="to" style={inputStyle} placeholder="city or airport" />
+        <input type="text" id="to" className='inputStyle' placeholder="city or airport" />
       </div>
 
       <div className="search-field">
         <label htmlFor="depart">Depart</label>
-        <input type="date" id="depart" style={inputStyle} />
+        <input type="date" id="depart" className='inputStyle' />
       </div>
 
       <div className="search-field">
         <label htmlFor="return">Return</label>
-        <input type="date" id="return" style={inputStyle} />
+        <input type="date" id="return" className='inputStyle' />
       </div>
 
       <div className="search-field">
         <label htmlFor="travellers">Travellers</label>
-        <select id="travellers" style={inputStyle}>
+        <select id="travellers" className='inputStyle'>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -59,14 +42,13 @@ function SearchBar() {
 
       <div className="search-field">
         <label htmlFor="budget">Budget (£)</label>
-        <input type="number" id="budget" style={inputStyle} placeholder="Enter your budget" />
+        <input type="number" id="budget" className='inputStyle'
+        placeholder="Enter your budget" />
       </div>
 
-      <button type="submit" style={buttonStyle}>
+      <button type="submit" className='buttonStyle'>
         Search
       </button>
     </div>
   );
 }
-
-export default SearchBar;

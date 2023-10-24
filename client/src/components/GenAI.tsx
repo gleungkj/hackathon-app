@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GenAI () {
+export const GenAI: React.FC = () => {
     return (
         <div>
             <h1>TRAVEL DREAMS WITHIN REACH</h1>
@@ -10,5 +10,3 @@ function GenAI () {
         </div>
     );
 }
-
-export default GenAI;
